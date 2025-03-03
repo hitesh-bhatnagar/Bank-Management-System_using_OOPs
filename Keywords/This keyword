@@ -1,0 +1,15 @@
+// This keyword refers to currect object
+
+// Use to differentialte instance variables and parameters if they have the same name;
+
+Class Student{
+    String name;
+    Student(String name){ 
+        this.name = name;   // this.name refers to instance variable
+    }
+    void show(){
+        System.out.println(name);
+    }
+}
+
+// Without this.name = name, Java would assume both name variables refer to the parameter, not the instance variable
